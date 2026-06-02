@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Record System</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>Student Record System</h1>
+
+
+    </div>
+
+    <div class="form">
+
+        <h2>Add Student</h2>
+
+        <input
+            type="text"
+            id="student_id"
+            placeholder="Student ID"
+        >
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Student Name"
+        >
+
+        <input
+            type="text"
+            id="section"
+            placeholder="Section"
+        >
+
+        <button onclick="addStudent()">
+            Add Student
+        </button>
+
+    </div>
+
+    <div class="table_container">
+
+        <h2>Student List</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Section</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="students">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<button
+class="logout_btn"
+onclick="logout()"
+>
+Logout
+</button>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
